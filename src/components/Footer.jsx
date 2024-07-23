@@ -1,6 +1,5 @@
 import React from "react";
 
-// TODO: make footer smaller and more subtle
 function Footer() {
   return (
     <footer>
