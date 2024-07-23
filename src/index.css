@@ -74,10 +74,15 @@ header.shrink {
   /* padding-right: 1rem; */
 }
 
-.about-me {
+.about-me h1 {
+  font-size: 2em;
+}
+
+.about-me-paragraph {
   display: flex;
   /* padding-left: 3rem; */
   align-items: center;
+  padding: 0 3rem;
 }
 
 nav {
@@ -126,6 +131,18 @@ nav ul li a:hover {
   max-width: 100%;
 }
 
+.profile-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo img {
+  max-width: 25%;
+  max-height: 25%;
+  flex: 1 1 33.333%;
+  border-radius: 2rem;
+}
+
 .intro-images img {
   max-width: calc(33.333% - 1rem);
   height: auto;
@@ -160,6 +177,16 @@ h2 {
 p {
   line-height: 1.5;
   font-size: x-large;
+}
+
+.easter-egg {
+  display: flex;
+  justify-content: center;
+  margin: -2rem;
+}
+
+.easter-egg p {
+  font-size: xx-small;
 }
 
 section {
@@ -206,24 +233,33 @@ section {
 .project-card {
   background-color: var(--color-secondary);
   color: var(--color-light);
-  padding: 1rem;
+  padding: 3rem;
   margin-bottom: 1rem;
-  border-radius: 5px;
+  border-radius: 2rem;
 }
 
-.skills ul {
-  list-style-type: none;
-  padding: 0;
+.project-card h3 {
+  font-size: x-large;
 }
 
-.skills ul li {
-  background-color: var(--color-secondary);
+.project-card p {
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.project-card a {
+  background-color: var(--color-dark);
   color: var(--color-light);
+  border: none;
   padding: 0.5rem 1rem;
-  margin-bottom: 0.5rem;
-  border-radius: 20px;
-  display: inline-block;
-  margin-right: 0.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-light);
 }
 
 /* .contact form {
@@ -280,7 +316,7 @@ button {
   color: var(--color-light);
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
+  border-radius: 2rem;
   cursor: pointer;
 }
 
@@ -297,7 +333,7 @@ button:hover {
   color: var(--color-secondary);
   border: solid 1px var(--color-secondary);
   padding: 0.5rem 1rem;
-  border-radius: 5px;
+  border-radius: 2rem;
   cursor: pointer;
 }
 
