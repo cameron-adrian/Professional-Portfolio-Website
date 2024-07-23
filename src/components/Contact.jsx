@@ -1,56 +1,47 @@
 // components/Contact.js
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { PopupButton, InlineWidget } from "react-calendly";
+import {
+  PopupButton,
+  InlineWidget,
+  useCalendlyEventListener,
+} from "react-calendly";
+// TODO: Expirement with using the useCalendlyEventListener hook to track the height of the Calendly form and adjust the height of the iframe accordingly when using the InlineWidget component
 
 function Contact() {
   return (
     <section className="contact">
       <h2>Contact Me</h2>
-      <div className="contact-block">
+      <div className="contact-info">
         <p className="contact-copy">
           I'm always looking for new opportunities to collaborate on projects,
           learn new technologies, and meet new people. If you're interested in
-          working together, feel free to reach out to me by email or by
-          scheduling a meeting with me using the Calendly from below!
+          working together, feel free to reach out to me by email or by booking
+          a meeting with me using Calendly!
         </p>
-      </div>
-      <div className="calendly-inline-widget-container">
-        <InlineWidget
-          url="https://calendly.com/cameronadrian/lets-chat"
-          pageSettings={{
-            backgroundColor: "3e4a61",
-            hideEventTypeDetails: false,
-            hideLandingPageDetails: false,
-            primaryColor: "c24d2c",
-            textColor: "d9dad7",
-            dataResize: true,
-          }}
-        />
+        <div className="contact-block">
+          <a className="contact-email" href="mailto:camerontadrian@gmail.com">
+            <FontAwesomeIcon className="icon" icon={faEnvelope} size="xl" />
+            <span>camerontadrian@gmail.com</span>
+          </a>
+          <PopupButton
+            className="calendly-button"
+            url="https://calendly.com/cameronadrian/lets-chat"
+            rootElement={document.getElementById("root")}
+            text="Book Meeting"
+            pageSettings={{
+              backgroundColor: "3e4a61",
+              hideEventTypeDetails: false,
+              hideLandingPageDetails: false,
+              primaryColor: "c24d2c",
+              textColor: "d9dad7",
+            }}
+          />
+        </div>
       </div>
     </section>
   );
 }
 
 export default Contact;
-{
-  /* <PopupButton
-className="calendly-button"
-url="https://calendly.com/cameronadrian/lets-chat"
-rootElement={document.getElementById("root")}
-text="Book time with me using Calendly"
-pageSettings={{
-  backgroundColor: "3e4a61",
-  hideEventTypeDetails: false,
-  hideLandingPageDetails: false,
-  primaryColor: "c24d2c",
-  textColor: "d9dad7",
-}}
-/> */
-}
-
-// <form className="contact-form">
-// <input type="email" placeholder="Email" required />
-// <input type="text" placeholder="Name" required />
-// <textarea placeholder="Message" required></textarea>
-// <button type="submit">Send</button>
-// </form>

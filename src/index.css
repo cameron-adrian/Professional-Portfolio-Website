@@ -164,6 +164,8 @@ p {
 
 section {
   scroll-margin-top: 5rem;
+  /* padding: 1rem; */
+  /* TODO: Pad the sections so they're a bit farther apart from each other vertically, but also make sure the padding is consistent on the sides throughout the page. Probably need to make home/about me it's own component or section at least */
 }
 
 /* .contact-form {
@@ -171,13 +173,22 @@ section {
   justify-content: center;
 } */
 
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+
 .contact-block {
   display: flex;
-  gap: 15rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: normal;
 }
 
 .contact-copy {
-  max-width: 75%;
+  max-width: 60%;
 }
 
 .calendly-inline-widget-container {
@@ -241,8 +252,31 @@ section {
   background-color: var(--color-secondary);
 } */
 
+.contact {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.contact-email {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.contact-email span {
+  font-size: large;
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  color: var(--color-accent);
+}
+
 button {
-  background-color: var(--color-secondary);
+  background-color: var(--color-dark);
   color: var(--color-light);
   border: none;
   padding: 0.5rem 1rem;
