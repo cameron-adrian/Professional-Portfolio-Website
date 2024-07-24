@@ -21,11 +21,8 @@ function AboutMe() {
         <p className="about-me-paragraph">{aboutMeParagraph}</p>
       </div>
       <div className="intro-images">
-        <img
-          src="src/assets/profile-photo-1.jpg"
-          alt="Me on a Kennesaw Mountain hike"
-        />
-        <img src="src/assets/cheeky-photo-1.jpg" alt="Me conducting business" />
+        <img src="/profile-photo-1.jpg" alt="Me on a Kennesaw Mountain hike" />
+        <img src="cheeky-photo-1.jpg" alt="Me conducting business" />
         <img src="src/assets/cheeky-photo-1.jpg" alt="Description of image 3" />
       </div>
     </div>
