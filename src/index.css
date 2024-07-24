@@ -38,6 +38,7 @@ header {
   width: 100%;
   transition: all 0.3s ease;
   z-index: 1000;
+  border-bottom: #c24d2c 2px solid;
 }
 
 header.shrink {
@@ -74,15 +75,28 @@ header.shrink {
   /* padding-right: 1rem; */
 }
 
+.about-me {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .about-me h1 {
   font-size: 2em;
+  padding-top: 2rem;
+}
+
+.about-me h2 {
+  padding-bottom: 2rem;
 }
 
 .about-me-paragraph {
-  display: flex;
-  /* padding-left: 3rem; */
-  align-items: center;
-  padding: 0 3rem;
+  max-width: 90%;
+  text-align: center;
+  white-space: normal;
+  text-wrap: normal;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 nav {
@@ -120,15 +134,6 @@ nav ul li a:hover {
   padding-right: 2rem;
   max-width: 80rem;
   margin: auto;
-}
-
-.intro-images {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 1rem;
-  margin-top: 2rem;
-  max-width: 100%;
 }
 
 .profile-photo {
@@ -195,6 +200,12 @@ section {
   /* TODO: Pad the sections so they're a bit farther apart from each other vertically, but also make sure the padding is consistent on the sides throughout the page. Probably need to make home/about me it's own component or section at least */
 }
 
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
 .contact-info {
   display: flex;
   justify-content: center;
@@ -211,6 +222,7 @@ section {
 
 .contact-copy {
   max-width: 60%;
+  text-align: center;
 }
 
 .calendly-inline-widget-container {
@@ -238,7 +250,7 @@ section {
 }
 
 .project-card h3 {
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 .project-card p {
@@ -256,7 +268,7 @@ section {
   text-decoration: none;
 }
 
-.project-card a:hover {
+.project-card .project-info a:hover {
   background-color: var(--color-accent);
   color: var(--color-light);
 }
@@ -267,10 +279,18 @@ section {
 }
 
 .project-image-link img {
-  max-width: 50%;
-  height: auto;
+  max-height: 50%;
+  max-width: 80%;
   border-radius: 2rem;
+  margin-top: 2rem;
 }
+
+.project-image-link img:hover {
+  transform: scale(1.025);
+  transition: all 0.3s ease;
+  border: #c24d2c 2px solid;
+}
+
 /* .contact form {
   display: flex;
   flex-direction: column;
@@ -378,13 +398,4 @@ footer p {
   .contact-copy {
     max-width: 90%;
   }
-}
-
-.about-me-paragraph {
-  max-width: 90%;
-  padding: 0 0 0 0;
-  justify-content: center;
-}
-
-.my-name {
 }

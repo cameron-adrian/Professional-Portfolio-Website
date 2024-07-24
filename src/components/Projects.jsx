@@ -36,16 +36,16 @@ function Projects() {
           <div className="project-info">
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <div className="project-image">
-              <a className="project-image-link" href={project.link}>
-                <img src={project.img} alt={project.alt} />
-              </a>
-            </div>
             <a className="project-github-link" href={project.githubLink}>
               View Project on GitHub
             </a>
-            {/* <FontAwesomeIcon className="icon" size="2x" icon={faReact} /> */}
           </div>
+          <div className="project-image">
+            <a className="project-image-link" href={project.link}>
+              <img src={project.img} alt={project.alt} />
+            </a>
+          </div>
+          {/* <FontAwesomeIcon className="icon" size="2x" icon={faReact} /> */}
         </div>
       ))}
     </section>
