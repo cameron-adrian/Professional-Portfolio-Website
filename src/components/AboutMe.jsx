@@ -8,7 +8,7 @@ function AboutMe() {
     <div>
       <div className="profile-photo">
         <img
-          src="src/assets/profile-photo-1.jpg"
+          src="https://cameron-adrian-portfolio.netlify.app/src/assets/profile-photo-1.jpg"
           alt="Me on a Kennesaw Mountain hike"
         />
       </div>
