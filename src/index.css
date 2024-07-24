@@ -242,7 +242,7 @@ section {
   white-space: pre-line;
 }
 
-.project-card a {
+.project-github-link {
   background-color: var(--color-dark);
   color: var(--color-light);
   border: none;
@@ -257,6 +257,16 @@ section {
   color: var(--color-light);
 }
 
+.project-image-link {
+  display: flex;
+  justify-content: center;
+}
+
+.project-image-link img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 2rem;
+}
 /* .contact form {
   display: flex;
   flex-direction: column;

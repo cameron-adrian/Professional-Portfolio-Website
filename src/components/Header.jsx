@@ -17,7 +17,7 @@ function Header() {
       const header = document.querySelector("header");
       if (window.scrollY > 50 || window.innerWidth < 1000) {
         header.classList.add("shrink");
-        setNamePlate("CA");
+        setNamePlate("[CA]");
       } else {
         header.classList.remove("shrink");
         setNamePlate("Cameron Adrian");
