@@ -283,6 +283,7 @@ section {
   max-width: 80%;
   border-radius: 2rem;
   margin-top: 2rem;
+  border: #d9dad7 0.75px solid;
 }
 
 .project-image-link img:hover {
