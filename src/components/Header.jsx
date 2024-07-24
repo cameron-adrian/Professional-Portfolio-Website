@@ -1,6 +1,6 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 function Header() {
   const scrollToSection = (id) => {
@@ -10,13 +10,17 @@ function Header() {
     }
   };
 
+  const [namePlate, setNamePlate] = useState("Cameron Adrian");
+
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector("header");
-      if (window.scrollY > 50) {
+      if (window.scrollY > 50 || window.innerWidth < 1000) {
         header.classList.add("shrink");
+        setNamePlate("CA");
       } else {
         header.classList.remove("shrink");
+        setNamePlate("Cameron Adrian");
       }
     };
 
@@ -30,9 +34,9 @@ function Header() {
     <header>
       <nav>
         <ul className="header-leftside">
-          <li className="about-me">
+          <li className="my-name">
             <a onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-              Cameron Adrian
+              {namePlate}
             </a>
           </li>
         </ul>
