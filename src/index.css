@@ -226,11 +226,15 @@ section {
   cursor: pointer;
 } */
 .project-card {
+  display: flex;
   background-color: var(--color-secondary);
   color: var(--color-light);
   padding: 3rem;
   margin-bottom: 1rem;
   border-radius: 2rem;
+  border: #c24d2c 2px solid;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .project-card h3 {

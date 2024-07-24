@@ -8,7 +8,7 @@ function Projects() {
       id: 1,
       title: "Drum Pattern Randomizer",
       description:
-        "This app is designed to help you learn new patterns outside of the standard rudiments taught to drummers. The app presents you with a random drum pattern, including accented and ghosted notes.\n\nThis project is built with React/Vite and styled with CSS.",
+        "This app is designed to help you learn new patterns outside of the standard rudiments taught to drummers. The app presents you with a random drum pattern, including accented and ghosted notes. It also offers a playback option so you can hear the pattern at your chosen tempo.\n\nThis project is built with React/Vite and styled with CSS.",
       link: "https://drum-pattern-randomizer.netlify.app/",
       githubLink:
         "https://github.com/cameron-adrian/Spotify-Playlist-Assistant",
@@ -33,15 +33,19 @@ function Projects() {
       <h2>My Projects</h2>
       {projects.map((project) => (
         <div key={project.id} className="project-card">
-          <a className="project-image-link" href={project.link}>
-            <img src={project.img} alt={project.alt} />
-          </a>
-          <h3>{project.title}</h3>
-          <p>{project.description}</p>
-          <a className="project-github-link" href={project.githubLink}>
-            View Project on GitHub
-          </a>
-          {/* <FontAwesomeIcon className="icon" size="2x" icon={faReact} /> */}
+          <div className="project-info">
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <div className="project-image">
+              <a className="project-image-link" href={project.link}>
+                <img src={project.img} alt={project.alt} />
+              </a>
+            </div>
+            <a className="project-github-link" href={project.githubLink}>
+              View Project on GitHub
+            </a>
+            {/* <FontAwesomeIcon className="icon" size="2x" icon={faReact} /> */}
+          </div>
         </div>
       ))}
     </section>
