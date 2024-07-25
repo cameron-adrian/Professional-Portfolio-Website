@@ -11,5 +11,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </Router>
   </React.StrictMode>
 );
-
-// TODO: Figure out how to deploy. Maybe use github pages? Or netlify? Or something else? I do have access to cameronadrian.com. Maybe I could use that. or cameronadrian.dev

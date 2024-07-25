@@ -80,7 +80,6 @@ function Header() {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon className="icon" size="xl" icon={faGithub} />
-              {/* TODO: Find out how to inverse the colors on hover*/}
             </a>
           </li>
         </ul>

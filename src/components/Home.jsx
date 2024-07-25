@@ -3,8 +3,6 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import AboutMe from "./AboutMe";
 
-// import ArrowCircleUpSharpIcon from "@mui/icons-material/ArrowCircleUpSharp"; TODO: figure out how to import this icon or just use an SVG instead or something
-
 function Home() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -27,7 +25,6 @@ function Home() {
 
   return (
     <div className="home">
-      {/* TODO: write better copy lol */}
       <section id="about-me">
         <AboutMe />
       </section>
