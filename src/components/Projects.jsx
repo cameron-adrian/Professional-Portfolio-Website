@@ -23,7 +23,7 @@ function Projects() {
       link: "https://google.com",
       githubLink:
         "https://github.com/cameron-adrian/Spotify-Playlist-Assistant",
-      img: "/profile-photo-1.jpg",
+      img: "/spotify-playlist-assistant.png",
       alt: "Drum Pattern Randomizer",
     },
   ];
