@@ -12,10 +12,11 @@ function Header() {
 
   const [namePlate, setNamePlate] = useState("Cameron Adrian");
 
+  // Shrink header on scroll
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector("header");
-      if (window.scrollY > 50 || window.innerWidth < 1000) {
+      if (window.scrollY > 50) {
         header.classList.add("shrink");
         setNamePlate("[CA]");
       } else {
@@ -27,6 +28,23 @@ function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Change nameplate text based on window width
+  useEffect(() => {
+    const handleResize = () => {
+      const header = document.querySelector("header");
+      if (window.innerWidth < 1000) {
+        setNamePlate("[CA]");
+      } else {
+        setNamePlate("Cameron Adrian");
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
