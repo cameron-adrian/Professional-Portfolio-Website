@@ -22,7 +22,6 @@ function AboutMe() {
         <h2>Software Engineer</h2>
         <p className="about-me-paragraph">{aboutMeParagraph}</p>
       </div>
-      <div></div>
     </div>
   );
 }

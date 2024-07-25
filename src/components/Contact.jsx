@@ -2,12 +2,7 @@
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import {
-  PopupButton,
-  InlineWidget,
-  useCalendlyEventListener,
-} from "react-calendly";
-// TODO: Expirement with using the useCalendlyEventListener hook to track the height of the Calendly form and adjust the height of the iframe accordingly when using the InlineWidget component
+import { PopupButton } from "react-calendly";
 
 function Contact() {
   return (

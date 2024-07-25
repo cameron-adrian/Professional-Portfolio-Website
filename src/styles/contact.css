@@ -1,0 +1,46 @@
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: normal;
+}
+
+.contact-copy {
+  max-width: 60%;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.contact-email {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.contact-email span {
+  font-size: large;
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  color: var(--color-accent);
+}

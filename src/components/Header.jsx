@@ -36,8 +36,10 @@ function Header() {
     const handleResize = () => {
       const header = document.querySelector("header");
       if (window.innerWidth < 1000) {
+        header.classList.add("shrink");
         setNamePlate("[CA]");
       } else {
+        header.classList.remove("shrink");
         setNamePlate("Cameron Adrian");
       }
     };

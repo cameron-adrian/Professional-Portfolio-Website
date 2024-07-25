@@ -1,0 +1,33 @@
+.about-me {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-me h1 {
+  font-size: 2em;
+  padding-top: 2rem;
+}
+
+.easter-egg {
+  display: flex;
+  justify-content: center;
+  margin: -2rem;
+}
+
+.easter-egg p {
+  font-size: xx-small;
+}
+
+.about-me h2 {
+  padding-bottom: 2rem;
+}
+
+.about-me-paragraph {
+  max-width: 90%;
+  text-align: center;
+  white-space: pre-line;
+  text-wrap: normal;
+  margin: 0 auto;
+  padding: 1rem;
+}

@@ -5,6 +5,7 @@
 - [ ] Mobile responsiveness
 
 1. Smaller/no margins?
+2. shrink header when window is too narrow
 
 - [ ]
 - [ ]
