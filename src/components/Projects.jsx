@@ -19,8 +19,8 @@ function Projects() {
       id: 2,
       title: "Spotify Playlist Assistant [WIP]",
       description:
-        "This app is designed to help you manage your Spotify playlists in a more granular and detailed way than you can within Spotify at the moment. You can view all of your playlists with additional information about each one such as average song length. \n\nThis project is built with a Django backend, styled with CSS, and uses the Spotify API.",
-      link: "https://google.com",
+        "This app is designed to help you manage your Spotify playlists in a more granular and detailed way than you can within Spotify at the moment. You can view all of your playlists with additional information about each one such as average song length. This is a project I'll be coming back to as I learn more about deploying and maintaining production-level databases with user authentication.\n\nThis project is built with a Django backend, styled with CSS, and uses the Spotify API.",
+      link: "https://spotify.com",
       githubLink:
         "https://github.com/cameron-adrian/Spotify-Playlist-Assistant",
       img: "/spotify-playlist-assistant.png",
