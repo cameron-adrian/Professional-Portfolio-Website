@@ -31,9 +31,11 @@ function Home() {
       <section id="about-me">
         <AboutMe />
       </section>
+      <div className="divider"></div>
       <section id="projects">
         <Projects />
       </section>
+      <div className="divider"></div>
       <section id="contact">
         <Contact />
       </section>

@@ -93,7 +93,7 @@ header.shrink {
 .about-me-paragraph {
   max-width: 90%;
   text-align: center;
-  white-space: normal;
+  white-space: pre-line;
   text-wrap: normal;
   margin: 0 auto;
   padding: 1rem;
@@ -196,14 +196,12 @@ p {
 
 section {
   scroll-margin-top: 5rem;
-  /* padding: 1rem; */
-  /* TODO: Pad the sections so they're a bit farther apart from each other vertically, but also make sure the padding is consistent on the sides throughout the page. Probably need to make home/about me it's own component or section at least */
+  padding: 1rem;
 }
 
 .contact {
   display: flex;
   justify-content: center;
-  padding: 2rem;
 }
 
 .contact-info {
@@ -292,32 +290,6 @@ section {
   border: #c24d2c 2px solid;
 }
 
-/* .contact form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact form input,
-.contact form textarea {
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border: 1px solid var(--color-secondary);
-  border-radius: 5px;
-} */
-
-/* .contact form button {
-  background-color: var(--color-accent);
-  color: var(--color-light);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact form button:hover {
-  background-color: var(--color-secondary);
-} */
-
 .contact {
   display: flex;
   justify-content: space-between;
@@ -339,6 +311,11 @@ section {
 
 .contact-email:hover {
   color: var(--color-accent);
+}
+
+.divider {
+  border-top: 2px solid var(--color-accent);
+  margin: 2rem 0;
 }
 
 button {
