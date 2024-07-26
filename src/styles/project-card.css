@@ -29,6 +29,10 @@
   text-decoration: none;
 }
 
+.project-info h3 {
+  gap: 2rem;
+}
+
 .project-card .project-info a:hover {
   background-color: var(--color-accent);
   color: var(--color-light);

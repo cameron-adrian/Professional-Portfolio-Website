@@ -1,6 +1,6 @@
 import React from "react";
-// import { faReact } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReact, faPython } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Projects() {
   const projects = [
@@ -14,6 +14,7 @@ function Projects() {
         "https://github.com/cameron-adrian/Spotify-Playlist-Assistant",
       img: "/drum-pattern-randomizer.png",
       alt: "Drum Pattern Randomizer",
+      icon: faReact,
     },
     {
       id: 2,
@@ -25,6 +26,7 @@ function Projects() {
         "https://github.com/cameron-adrian/Spotify-Playlist-Assistant",
       img: "/spotify-playlist-assistant.png",
       alt: "Drum Pattern Randomizer",
+      icon: faPython,
     },
   ];
 
@@ -35,6 +37,7 @@ function Projects() {
         <div key={project.id} className="project-card">
           <div className="project-info">
             <h3>{project.title}</h3>
+            <FontAwesomeIcon size="3x" icon={project.icon} />
             <p>{project.description}</p>
             <a className="project-github-link" href={project.githubLink}>
               View Project on GitHub
@@ -45,7 +48,6 @@ function Projects() {
               <img src={project.img} alt={project.alt} />
             </a>
           </div>
-          {/* <FontAwesomeIcon className="icon" size="2x" icon={faReact} /> */}
         </div>
       ))}
     </section>
