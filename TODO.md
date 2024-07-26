@@ -2,16 +2,8 @@
 
 ## High Priority
 
-- [ ] Mobile responsiveness
-
-1. Smaller/no margins or padding?
-   1. In general I thin
-2. shrink header when window is too narrow
-   1. Why is the visualViewport.width not kicking in on a mobile screen from the beginning?
-3. I wanna get away with no hamburger menu
-4. 
-
-- [ ]
+- [ ] Make spacing between sections/dividers more consistent
+- [ ] Add technology logos
 - [ ]
 
 ## Medium Priority
@@ -26,3 +18,4 @@
 - [ ] Icons for buttons instead of my own
 - [ ] Fully inverse colors of Linkedin/Github icons on hover
 - [ ] Expirement with using the useCalendlyEventListener hook to track the height of the Calendly form and adjust the height of the iframe accordingly when using the InlineWidget component
+- [ ] Add hamburger menu
