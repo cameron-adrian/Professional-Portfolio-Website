@@ -4,8 +4,12 @@
 
 - [ ] Mobile responsiveness
 
-1. Smaller/no margins?
+1. Smaller/no margins or padding?
+   1. In general I thin
 2. shrink header when window is too narrow
+   1. Why is the visualViewport.width not kicking in on a mobile screen from the beginning?
+3. I wanna get away with no hamburger menu
+4. 
 
 - [ ]
 - [ ]
