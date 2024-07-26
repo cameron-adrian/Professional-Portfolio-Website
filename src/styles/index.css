@@ -145,4 +145,12 @@ footer p {
   .contact-copy {
     text-align: center;
   }
+
+  .project-info h3 {
+    text-align: center;
+  }
+
+  .project-github-link {
+    text-align: center;
+  }
 }
