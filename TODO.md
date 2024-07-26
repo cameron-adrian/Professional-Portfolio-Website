@@ -3,7 +3,7 @@
 ## High Priority
 
 - [ ] Make spacing between sections/dividers more consistent
-- [ ] Add technology logos
+- [ ]
 - [ ]
 
 ## Medium Priority
