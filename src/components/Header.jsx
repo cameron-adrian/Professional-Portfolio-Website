@@ -31,32 +31,14 @@ function Header() {
     };
   }, []);
 
-  // Change nameplate text based on window width
-  useEffect(() => {
-    const handleResize = () => {
-      const header = document.querySelector("header");
-      if (window.innerWidth < 1000) {
-        header.classList.add("shrink");
-        setNamePlate("[CA]");
-      } else {
-        header.classList.remove("shrink");
-        setNamePlate("Cameron Adrian");
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
-    <header>
+    <header className={window.visualViewport.width < 768 ? "shrink" : ""}>
       <nav>
         <ul className="header-leftside">
           <li className="my-name">
             <a onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-              {namePlate}
+              <span class="desktop-only">{namePlate}</span>
+              <span class="mobile-only">[CA]</span>
             </a>
           </li>
         </ul>

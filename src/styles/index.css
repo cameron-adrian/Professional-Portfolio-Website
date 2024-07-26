@@ -1,10 +1,9 @@
 /* src/index.css */
-@import "variables.css";
 @import "header.css";
 @import "about-me.css";
 @import "project-card.css";
 @import "contact.css";
-@import "media-queries.css";
+@import "variables.css";
 
 body {
   font-family: helvetica now, -apple-system, BlinkMacSystemFont, segoe ui,
@@ -33,18 +32,6 @@ body {
   margin: auto;
 }
 
-/* .profile-photo {
-  display: flex;
-  justify-content: center;
-}
-
-.profile-photo img {
-  max-width: 25%;
-  max-height: 25%;
-  flex: 1 1 33.333%;
-  border-radius: 2rem;
-} */
-
 main {
   flex-grow: 1;
   padding: 2rem;
@@ -62,7 +49,7 @@ p {
   font-size: x-large;
 }
 
-section {
+#section {
   scroll-margin-top: 5rem;
   padding: 1rem;
 }
@@ -117,4 +104,45 @@ footer p {
 .vertical-divider {
   border-left: 2px solid var(--color-light);
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: auto;
+  }
+  #section {
+    scroll-margin-top: 5rem;
+    padding: 0.1rem;
+  }
+  .profile-photo img {
+    max-width: 75%;
+    max-height: 75%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .contact-copy {
+    text-align: center;
+  }
 }

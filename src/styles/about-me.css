@@ -1,3 +1,15 @@
+.profile-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo img {
+  max-width: 200px;
+  max-height: 300px;
+  flex: 1 1 33.333%;
+  border-radius: 2rem;
+}
+
 .about-me {
   display: flex;
   justify-content: center;
@@ -24,7 +36,6 @@
 }
 
 .about-me-paragraph {
-  max-width: 90%;
   text-align: center;
   white-space: pre-line;
   text-wrap: normal;
