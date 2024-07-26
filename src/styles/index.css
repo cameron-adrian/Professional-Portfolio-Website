@@ -110,6 +110,13 @@ footer p {
   .desktop-only {
     display: none;
   }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 1rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -135,22 +142,15 @@ footer p {
     max-height: 75%;
   }
 
-  .contact-info {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    gap: 1rem;
-  }
-
   .contact-copy {
     text-align: center;
   }
 
-  .project-info h3 {
+  .project-info {
     text-align: center;
   }
 
-  .project-github-link {
-    text-align: center;
+  .project-info p {
+    text-align: left;
   }
 }
