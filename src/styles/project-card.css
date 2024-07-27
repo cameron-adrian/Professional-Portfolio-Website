@@ -3,11 +3,16 @@
   background-color: var(--color-secondary);
   color: var(--color-light);
   padding: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border-radius: 2rem;
   border: #c24d2c 2px solid;
   justify-content: space-between;
   flex-direction: column;
+  box-shadow: var(--color-secondary) 2px 2px 10px 2px;
+}
+
+.projects h2 {
+  padding: 1rem;
 }
 
 .project-card h3 {
