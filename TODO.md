@@ -2,13 +2,13 @@
 
 ## High Priority
 
-- [ ] Make spacing between sections/dividers more consistent
+- [ ] 
 - [ ]
 - [ ]
 
 ## Medium Priority
 
-- [ ] Add background pattern
+- [ ] 
 - [ ]
 - [ ]
 
