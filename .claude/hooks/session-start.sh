@@ -34,9 +34,11 @@ else
   git clone --depth 1 --quiet https://github.com/cameron-adrian/claude-config "$CONFIG_DIR" 2>/dev/null || true
 fi
 
-if [ -f "$CONFIG_DIR/CLAUDE.md" ]; then
+# The rules live in house-rules.md; claude-config's own CLAUDE.md is that
+# repo's project memory and must not be loaded here.
+if [ -f "$CONFIG_DIR/house-rules.md" ]; then
   mkdir -p "$HOME/.claude"
-  cp "$CONFIG_DIR/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
+  cp "$CONFIG_DIR/house-rules.md" "$HOME/.claude/CLAUDE.md"
 fi
 
 exit 0

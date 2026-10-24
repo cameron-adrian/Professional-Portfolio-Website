@@ -33,3 +33,6 @@ coverage
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+# Build output (Netlify builds this)
+dist

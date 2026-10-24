@@ -6,6 +6,3 @@ export default defineConfig({
   base: "./",
   plugins: [react()],
 });
-
-// Use ./ to serve the app from the root when using Netlify
-// Use /Professional-Portfolio-Website/ to serve the app from a subdirectory when using GitHub Pages?
