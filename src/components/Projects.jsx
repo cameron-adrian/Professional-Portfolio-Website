@@ -9,6 +9,7 @@ function Projects() {
       description:
         "This app is designed to help you learn new patterns outside of the standard rudiments taught to drummers. The app presents you with a random drum pattern, including accented and ghosted notes. It also offers a playback option so you can hear the pattern at your chosen tempo.\n\nThis project is built with React/Vite and styled with CSS.",
       link: "https://drum-pattern-randomizer.netlify.app/",
+      githubLink: "https://github.com/cameron-adrian/drum-practice-app",
       img: "/drum-pattern-randomizer.png",
       alt: "Drum Pattern Randomizer",
       icon: faReact,
